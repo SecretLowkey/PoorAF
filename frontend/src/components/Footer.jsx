@@ -118,22 +118,14 @@ const Footer = () => {
 
         {/* Token Stats */}
         <div className="border-t border-amber-800 mt-12 pt-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
             <div>
               <div className="text-2xl font-bold text-amber-200">{mockData.token.totalSupply}</div>
               <div className="text-amber-300 text-sm">Total Supply</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-amber-200">{mockData.token.price}</div>
-              <div className="text-amber-300 text-sm">Current Price</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-amber-200">{mockData.token.marketCap}</div>
-              <div className="text-amber-300 text-sm">Market Cap</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-amber-200">{mockData.token.holders}</div>
-              <div className="text-amber-300 text-sm">Holders</div>
+              <div className="text-2xl font-bold text-amber-200">Launching Soon</div>
+              <div className="text-amber-300 text-sm">Get Ready!</div>
             </div>
           </div>
         </div>
