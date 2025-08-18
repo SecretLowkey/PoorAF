@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from './ui/button';
 import { Menu, X, Twitter, MessageCircle } from 'lucide-react';
 import { mockData } from '../mock';
 
@@ -15,36 +14,36 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-amber-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-warm-gold/20">
+      <div className="container">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">$</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-gradient-to-r from-warm-gold to-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-dark-brown font-bold text-xl cartoon-font">$</span>
             </div>
-            <span className="text-2xl font-bold text-amber-900">PoorAF</span>
+            <span className="text-3xl font-bold cartoon-font text-dark-brown">PoorAF</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection('story')}
-              className="text-amber-800 hover:text-amber-600 transition-colors font-medium"
+              onClick={() => scrollToSection('about')}
+              className="text-dark-brown hover:text-slate-blue transition-colors font-medium body-font"
             >
-              Story
+              About
             </button>
             <button
               onClick={() => scrollToSection('tokenomics')}
-              className="text-amber-800 hover:text-amber-600 transition-colors font-medium"
+              className="text-dark-brown hover:text-slate-blue transition-colors font-medium body-font"
             >
               Tokenomics
             </button>
             <button
-              onClick={() => scrollToSection('how-to-buy')}
-              className="text-amber-800 hover:text-amber-600 transition-colors font-medium"
+              onClick={() => scrollToSection('roadmap')}
+              className="text-dark-brown hover:text-slate-blue transition-colors font-medium body-font"
             >
-              How to Buy
+              Roadmap
             </button>
           </nav>
 
@@ -54,7 +53,7 @@ const Header = () => {
               href={mockData.socials.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-600 hover:text-amber-800 transition-colors"
+              className="text-slate-blue hover:text-dark-brown transition-colors p-2"
             >
               <Twitter size={20} />
             </a>
@@ -62,21 +61,21 @@ const Header = () => {
               href={mockData.socials.telegram}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-600 hover:text-amber-800 transition-colors"
+              className="text-slate-blue hover:text-dark-brown transition-colors p-2"
             >
               <MessageCircle size={20} />
             </a>
-            <Button 
-              className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
-              onClick={() => scrollToSection('how-to-buy')}
+            <button 
+              className="btn-primary"
+              onClick={() => scrollToSection('buy-now')}
             >
               Buy Now
-            </Button>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-amber-800"
+            className="md:hidden text-dark-brown p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -85,31 +84,31 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t border-amber-200 py-4 space-y-4">
+          <div className="md:hidden bg-white border-t border-warm-gold/20 py-6 space-y-4">
             <button
-              onClick={() => scrollToSection('story')}
-              className="block w-full text-left px-4 py-2 text-amber-800 hover:bg-amber-50 transition-colors"
+              onClick={() => scrollToSection('about')}
+              className="block w-full text-left px-4 py-3 text-dark-brown hover:bg-light-beige transition-colors body-font"
             >
-              Story
+              About
             </button>
             <button
               onClick={() => scrollToSection('tokenomics')}
-              className="block w-full text-left px-4 py-2 text-amber-800 hover:bg-amber-50 transition-colors"
+              className="block w-full text-left px-4 py-3 text-dark-brown hover:bg-light-beige transition-colors body-font"
             >
               Tokenomics
             </button>
             <button
-              onClick={() => scrollToSection('how-to-buy')}
-              className="block w-full text-left px-4 py-2 text-amber-800 hover:bg-amber-50 transition-colors"
+              onClick={() => scrollToSection('roadmap')}
+              className="block w-full text-left px-4 py-3 text-dark-brown hover:bg-light-beige transition-colors body-font"
             >
-              How to Buy
+              Roadmap
             </button>
-            <div className="flex items-center justify-center space-x-4 pt-4 border-t border-amber-200">
+            <div className="flex items-center justify-center space-x-4 pt-4 border-t border-warm-gold/20">
               <a
                 href={mockData.socials.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-amber-600 hover:text-amber-800 transition-colors"
+                className="text-slate-blue hover:text-dark-brown transition-colors p-2"
               >
                 <Twitter size={20} />
               </a>
@@ -117,20 +116,31 @@ const Header = () => {
                 href={mockData.socials.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-amber-600 hover:text-amber-800 transition-colors"
+                className="text-slate-blue hover:text-dark-brown transition-colors p-2"
               >
                 <MessageCircle size={20} />
               </a>
-              <Button 
-                className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold px-6 py-2 rounded-full"
-                onClick={() => scrollToSection('how-to-buy')}
+              <button 
+                className="btn-primary"
+                onClick={() => scrollToSection('buy-now')}
               >
                 Buy Now
-              </Button>
+              </button>
             </div>
           </div>
         )}
       </div>
+      
+      <style jsx>{`
+        .bg-warm-gold { background-color: var(--warm-gold); }
+        .text-dark-brown { color: var(--dark-brown); }
+        .text-slate-blue { color: var(--slate-blue); }
+        .border-warm-gold { border-color: var(--warm-gold); }
+        .bg-light-beige { background-color: var(--light-beige); }
+        .hover\\:bg-light-beige:hover { background-color: var(--light-beige); }
+        .hover\\:text-slate-blue:hover { color: var(--slate-blue); }
+        .hover\\:text-dark-brown:hover { color: var(--dark-brown); }
+      `}</style>
     </header>
   );
 };
