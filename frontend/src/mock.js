@@ -2,7 +2,7 @@
 export const mockData = {
   token: {
     name: "PoorAF",
-    symbol: "$PoorAF",
+    symbol: "$POOR",
     totalSupply: "1,000,000,000",
     contractAddress: "Coming Soon...", // Will be provided later
   },
