@@ -1,12 +1,43 @@
-/* Custom styles for PoorAF memecoin website */
+/* PoorAF - Vintage Cartoon Memecoin Website */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables for consistent color palette */
+:root {
+  --warm-gold: #f2c94c;
+  --dark-brown: #5a3e36;
+  --light-beige: #f5e9ce;
+  --slate-blue: #3a6b7b;
+  --white: #ffffff;
+  --shadow-light: rgba(90, 62, 54, 0.1);
+  --shadow-medium: rgba(90, 62, 54, 0.15);
+  --shadow-heavy: rgba(90, 62, 54, 0.25);
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--dark-brown);
+  background-color: var(--light-beige);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .App {
   min-height: 100vh;
-}
-
-/* Smooth scrolling for the entire page */
-html {
-  scroll-behavior: smooth;
+  background: linear-gradient(135deg, var(--light-beige) 0%, #faf7f0 100%);
 }
 
 /* Image optimization and smoothing */
