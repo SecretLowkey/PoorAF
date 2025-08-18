@@ -31,7 +31,7 @@ const HowItWorks = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold cartoon-font text-dark-brown mb-8">
-            How <span className="text-warm-gold">$PoorAF</span> Works
+            How <span className="text-warm-gold">$POOR</span> Works
           </h2>
           <p className="text-xl text-slate-blue body-font max-w-3xl mx-auto">
             Born from chaos, rebuilt by community. We're powered by memes and community loyalty — not empty promises.
