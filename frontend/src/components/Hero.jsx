@@ -54,7 +54,7 @@ const Hero = () => {
           {/* Title and Slogan */}
           <div className="mb-12 space-y-6">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold cartoon-font text-dark-brown mb-6">
-              <span className="text-warm-gold">$</span>PoorAF
+              <span className="text-warm-gold">$</span>POOR
               <div className="text-4xl md:text-5xl text-slate-blue mt-4">NEVER STAYS POOR</div>
             </h1>
             <p className="text-2xl md:text-3xl text-slate-blue font-medium cartoon-font mb-6">
