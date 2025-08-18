@@ -11,7 +11,7 @@ const About = () => {
     },
     {
       icon: Shield,
-      title: "Anti-Rug Technology",
+      title: "Community Owned",
       description: "Liquidity locked forever, ownership renounced. We've been rugged before, never again!"
     },
     {
