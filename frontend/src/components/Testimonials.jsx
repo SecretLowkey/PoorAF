@@ -4,19 +4,19 @@ import { Quote, Star, MessageCircle, Twitter } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      text: "Being part of the $PoorAF community from day one has been incredible! We've built something real from the ashes of abandonment. This is true community power in action.",
-      author: "@PoorAFHolder",
+      text: "Being part of the $POOR community from day one has been incredible! We've built something real from the ashes of abandonment. This is true community power in action.",
+      author: "@PoorHolder",
       platform: "twitter",
       role: "Community Member"
     },
     {
-      text: "1 billion tokens in community hands shows real decentralization. As someone who's been rugged before, $PoorAF gives me hope that we can build something better.",
+      text: "1 billion tokens in community hands shows real decentralization. As someone who's been rugged before, $POOR gives me hope that we can build something better.",
       author: "@CommunityBuilder",
       platform: "telegram", 
       role: "Early Adopter"
     },
     {
-      text: "From pocket lint to potential millions. The $PoorAF story resonates with everyone who's ever been left behind. We're not just buying a token, we're joining a movement.",
+      text: "From pocket lint to potential millions. The $POOR story resonates with everyone who's ever been left behind. We're not just buying a token, we're joining a movement.",
       author: "@ChadRevenge",
       platform: "twitter",
       role: "Believer"
