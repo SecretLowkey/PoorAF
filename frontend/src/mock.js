@@ -5,9 +5,6 @@ export const mockData = {
     symbol: "$PoorAF",
     totalSupply: "1,000,000,000",
     contractAddress: "Coming Soon...", // Will be provided later
-    price: "$0.000123",
-    marketCap: "$123,456",
-    holders: "1,337"
   },
   
   story: "Story is reality, a bunch of Chads banded together with some pocket lint and loose change left over from being rugged. We have had enough and this is our answer Poor as Fuck!!",
