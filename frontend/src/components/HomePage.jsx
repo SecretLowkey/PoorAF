@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { mockData } from '../mock';
 import Header from './Header';
 import Hero from './Hero';
-import Story from './Story';
+import About from './About';
 import Tokenomics from './Tokenomics';
-import HowToBuy from './HowToBuy';
+import Roadmap from './Roadmap';
 import Footer from './Footer';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-100">
+    <div className="min-h-screen">
       <Header />
       <Hero />
-      <Story />
+      <About />
       <Tokenomics />
-      <HowToBuy />
+      <Roadmap />
       <Footer />
     </div>
   );
