@@ -55,13 +55,21 @@ const Hero = () => {
           <div className="mb-12 space-y-6">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold cartoon-font text-dark-brown mb-6">
               <span className="text-warm-gold">$</span>PoorAF
+              <div className="text-4xl md:text-5xl text-slate-blue mt-4">NEVER STAYS POOR</div>
             </h1>
             <p className="text-2xl md:text-3xl text-slate-blue font-medium cartoon-font mb-6">
               From bum to millionaire, fortune in a meme
             </p>
-            <p className="text-lg text-dark-brown/80 body-font max-w-2xl mx-auto leading-relaxed">
-              The ultimate underdog story in memecoin form. We've been rugged, we've been poor, but we're fighting back with humor and hope.
-            </p>
+            <div className="text-lg text-dark-brown/90 body-font max-w-3xl mx-auto leading-relaxed space-y-4">
+              <p className="font-semibold">
+                <span className="text-warm-gold">The Chads Left Us For Dead.</span><br/>
+                But We Rebuilt — <strong>Better Than Ever.</strong>
+              </p>
+              <p>
+                1 Billion tokens in community hands. No VCs, no dev wallet abuse. 
+                Just pure meme power and the will to stop being poor AF.
+              </p>
+            </div>
           </div>
 
           {/* Token Info Card */}
