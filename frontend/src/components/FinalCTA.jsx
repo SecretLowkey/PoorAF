@@ -18,7 +18,7 @@ const FinalCTA = () => {
           {/* Main Headline */}
           <div className="mb-12">
             <div className="text-6xl md:text-7xl lg:text-8xl font-bold cartoon-font mb-6">
-              <span className="text-warm-gold">Buy $PoorAF</span>
+              <span className="text-warm-gold">Buy $POOR</span>
               <div className="text-white">now or cry later.</div>
             </div>
             <p className="text-2xl md:text-3xl text-light-beige/90 body-font">
